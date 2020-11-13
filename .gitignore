@@ -102,6 +102,9 @@ ENV/
 
 /data/
 /models/
+/meta/
 /checkpoints/
 /pretrained_models/
 .DS_Store
+
+tflite

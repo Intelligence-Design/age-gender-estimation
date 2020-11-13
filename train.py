@@ -36,7 +36,7 @@ def main(cfg):
                       loss=["sparse_categorical_crossentropy", "sparse_categorical_crossentropy"],
                       metrics=['accuracy'])
 
-    checkpoint_dir = Path(to_absolute_path(__file__)).parent.joinpath("checkpoint")
+    checkpoint_dir = Path(to_absolute_path(__file__)).parent.joinpath("checkpoints")
     checkpoint_dir.mkdir(exist_ok=True)
     filename = "_".join([cfg.model.model_name,
                          str(cfg.model.img_size),
